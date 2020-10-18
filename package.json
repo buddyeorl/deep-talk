@@ -1,0 +1,33 @@
+{
+  "name": "small-talk",
+  "version": "1.0.0",
+  "description": "Easy to use implementation for deep-speech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buddyeorl/small-talk.git"
+  },
+  "keywords": [
+    "Deep",
+    "speech",
+    "javascript",
+    "small",
+    "talk",
+    "www.alexcode.io",
+    "deeplearning",
+    "speech",
+    "recognition"
+  ],
+  "author": "Alexander Lizarraga -  https://www.alexcode.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buddyeorl/small-talk/issues"
+  },
+  "homepage": "https://github.com/buddyeorl/small-talk#readme",
+  "dependencies": {
+    "deepspeech": "^0.8.2"
+  }
+}
