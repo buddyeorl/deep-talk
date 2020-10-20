@@ -3,6 +3,9 @@
 /client/node_modules/
 /server/node_modules/
 
+#deepspeech scorer, models, checkpoints files and audio files
+/index
+
 # production
 /client/build/
 
