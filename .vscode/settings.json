@@ -1,0 +1,9 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/41f28173-b85b-4466-80dc-fa2a22959ad6/resourceGroups/deep-talk-resource/providers/Microsoft.Web/sites/deep-talk",
+    "appService.deploySubpath": ".",
+    "appService.showBuildDuringDeployPrompt": false
+}

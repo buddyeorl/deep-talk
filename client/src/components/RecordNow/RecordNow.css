@@ -1,0 +1,58 @@
+.button{
+    transform:scale(1.005);
+    box-shadow: 0px 0px 2px -1px;
+    transition: transform 300ms, box-shadow 300ms;
+    cursor:pointer;
+    outline:none
+}
+
+.button:hover{
+    transform:scale(1.04);
+}
+
+.button:active{
+    transform:scale(0.99);
+}
+
+.downloadButton{
+  transform:scale(1.005);
+  box-shadow: 0px 0px 2px -1px;
+  transition: transform 300ms, box-shadow 300ms;
+  cursor:pointer;
+  outline:none
+}
+
+.downloadButton:hover{
+  transform:scale(1.10);
+}
+
+.downloadButton:active{
+  transform:scale(0.96);
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  .animate-flicker {
+     -webkit-animation: flickerAnimation 1s infinite;
+     -moz-animation: flickerAnimation 1s infinite;
+     -o-animation: flickerAnimation 1s infinite;
+      animation: flickerAnimation 1s infinite;
+  }
