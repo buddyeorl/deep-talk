@@ -32,7 +32,39 @@ Now in the terminal `cd server && node server.js`
 
 *** defaults to http://localhost:3001 ***
 
-### `Important audio info`
+### API calls
+
+API calls to 
+
+`https://deep-talk.azurewebsites.net/api/v1/getVoice`
+
+POST requests accepts 16kHZ mono 16bits WAV audio files in multipart form data,the field name should be 'audio'
+
+sample responses:
+
+No audio file:
+```json
+{
+    "message": "No audio file has been received"
+}
+```
+
+No recognition:
+```json
+{
+    "error": "No speech was recognized"
+}
+```
+
+Success:
+```json
+{
+    "message": "success",
+    "data": "two three"
+}
+```
+
+### Important audio info
 
 Please note that the audio recorded is resampled to 16kHZ mono 16bits(as used when training the model), I might add different samplerates recording options if requested.
 
