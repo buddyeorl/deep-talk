@@ -29,7 +29,7 @@ let audioData = []
 
 const RecordNow = () => {
     const canvasRef = useRef();
-
+    const listRef = useRef();
     //analyzer context
     //for testing "record until silence"
     const [audioCtx, setAudioCtx] = useState();
@@ -636,7 +636,7 @@ const RecordNow = () => {
                 </div>
             </section>
             <div style={styles.audioContainer}>
-                <ul style={styles.audioList}>
+                <ul ref={listRef} style={styles.audioList}>
                     {speech && speech.map((item, index) =>
 
                         <li key={index} style={styles.audioItem}>
@@ -649,7 +649,7 @@ const RecordNow = () => {
                             </div>
                             <span style={{ color: item.error ? '#ff6d15' : 'unset', fontWeight: item.error ? 500 : 600, textAlign: 'left', maxWidth: '70vw' }} >{item.text}</span>
                         </li>
-                    )}
+                    ).reverse()}
 
                 </ul>
             </div>
