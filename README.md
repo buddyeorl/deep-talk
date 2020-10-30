@@ -66,7 +66,7 @@ Success:
 
 ### Important audio info
 
-Please note that the audio recorded is resampled to 16kHZ mono 16bits(as used when training the model), I might add different samplerates recording options if requested.
+Please note that the app resamples the audio recorded to 16kHZ mono 16bits(as used when training the model), ***I might add different samplerates recording options if requested***.
 
 Also note that this app will recognize pauses in speech and trimm the audio files and speech recognition responses accordingly.
 
